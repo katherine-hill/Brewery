@@ -1,0 +1,44 @@
+.headstuff {
+    width: 100%;
+    display: flex;
+    @include bp(mobile) {
+        height: 20%;
+        border-bottom: $mobileBorder;
+    }
+    @include bp(small) {
+        height: 70px;
+        border-bottom: $largerBorder;
+    }
+    @include bp(medium) {
+        height: 70px;
+        border-bottom: $largerBorder;
+    }
+    @include bp(large) {
+        height: 90px;
+        border-bottom: $largerBorder;
+    }
+    @include bp(full) {
+        height: 100px;
+        border-bottom: $largerBorder;
+    }
+
+    .hero {
+        display: flex;
+        @include bp(mobile) {
+            width: 80%;
+            margin: 1% auto;
+        }
+        @include bp(small) {
+            width: 30%;
+        }
+        @include bp(medium) {
+            width: 20%;
+        }
+        @include bp(large) {
+            width: 20%;
+        }
+        @include bp(full) {
+            width: 20%;
+        }
+    }
+}

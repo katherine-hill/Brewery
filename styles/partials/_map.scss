@@ -1,0 +1,111 @@
+.map-and-contact {
+    display: flex;
+
+    h1 {
+        font-family: $headerFont;
+        color: red;
+        font-size: 1.25rem;
+    }
+    @include bp(mobile) {
+        flex-direction: column;
+        justify-content: center;
+    }
+    @include bp(small) {
+        flex-direction: row;
+        margin: 1% auto;
+    }
+    @include bp(medium) {
+        flex-direction: row;
+    }
+    @include bp(large) {
+        flex-direction: row;
+    }
+
+    .map {
+        max-width: 100%;
+        overflow: hidden;
+        @include bp(mobile) {
+            width: 300px;
+            height: 300px;
+            margin: 1% auto 1% 15%;
+        }
+        @include bp(small) {
+            margin-top: 10%;
+            width: 275px;
+            height: 275px;
+        }
+        @include bp(medium) {
+            height: 350px;
+            width: 350px;
+            margin-top: 5%;
+        }
+        @include bp(large) {
+            height: 500px;
+            width: 500px;
+            margin-top: 0;
+        }
+    }
+
+    #my-map-display {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    iframe {
+        @include bp(mobile) {
+            height: 80%;
+            width: 80%;
+        }
+        height: 100%;
+        width: 100%;
+        border: 0;
+    }
+
+    #my-map-display .text-marker {
+        max-width: none!important;
+        background: none!important;
+    }
+
+    .iframe img {
+        max-width: none;
+    }
+
+    .contact_form {
+        .row {
+            padding: 2%;
+        }
+
+        #submit_button {
+            background: red;
+            color: white;
+            border: none;
+        }
+        @include bp(mobile) {
+            margin: 1% auto;
+        }
+        @include bp(small) {
+            margin-top: 0;
+            flex-direction: row;
+            justify-content: center;
+
+            textarea {
+                width: 250px;
+                height: 250px;
+            }
+            @include bp(medium) {
+                flex-direction: row;
+                justify-content: space-around;
+
+                textarea {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            @include bp(large) {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+}

@@ -1,0 +1,411 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.bottomnav {
+  display: flex; }
+  @media screen and (min-width: 320px) {
+    .bottomnav {
+      height: 150px;
+      justify-content: center;
+      flex-direction: column; } }
+  @media screen and (min-width: 550px) {
+    .bottomnav {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px; } }
+  @media screen and (min-width: 670px) {
+    .bottomnav {
+      width: 100%;
+      justify-content: space-around;
+      margin-left: 10%; } }
+  @media screen and (min-width: 820px) {
+    .bottomnav {
+      width: 100%;
+      height: 40px;
+      margin-left: 20%;
+      align-items: center;
+      justify-content: space-between;
+      align-items: center; } }
+  @media screen and (min-width: 320px) {
+    .bottomnav .navbar {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 1% auto; } }
+  @media screen and (min-width: 550px) {
+    .bottomnav .navbar {
+      display: flex;
+      flex-direction: row;
+      width: 50%; } }
+  @media screen and (min-width: 670px) {
+    .bottomnav .navbar {
+      width: 40%; } }
+  @media screen and (min-width: 320px) {
+    .bottomnav .navbar li {
+      text-align: center;
+      border: 2px solid red;
+      border-bottom: none; }
+      .bottomnav .navbar li:last-child {
+        border-bottom: 2px solid red; }
+      .bottomnav .navbar li a {
+        font-size: 1rem;
+        width: 20%;
+        color: red;
+        text-decoration: none;
+        padding: 4px; } }
+  @media screen and (min-width: 550px) {
+    .bottomnav .navbar li {
+      border: none; }
+      .bottomnav .navbar li:last-child {
+        border-bottom: none; }
+      .bottomnav .navbar li a {
+        font-size: 1rem;
+        width: 20%;
+        color: red;
+        text-decoration: none;
+        padding: 4px; } }
+  @media screen and (min-width: 320px) {
+    .bottomnav .socialmediasmall {
+      display: flex;
+      justify-content: center;
+      color: red;
+      font-size: 2.5rem; }
+      .bottomnav .socialmediasmall span {
+        padding-right: 1%; } }
+  @media screen and (min-width: 550px) {
+    .bottomnav .socialmediasmall {
+      color: red;
+      font-size: 1.5rem; }
+      .bottomnav .socialmediasmall span {
+        padding-right: 5%; } }
+
+.brewery-image {
+  width: 100%; }
+
+.map-and-contact {
+  display: flex; }
+  .map-and-contact h1 {
+    font-family: "Cinzel", serif;
+    color: red;
+    font-size: 1.25rem; }
+  @media screen and (min-width: 320px) {
+    .map-and-contact {
+      flex-direction: column;
+      justify-content: center; } }
+  @media screen and (min-width: 550px) {
+    .map-and-contact {
+      flex-direction: row;
+      margin: 1% auto; } }
+  @media screen and (min-width: 670px) {
+    .map-and-contact {
+      flex-direction: row; } }
+  @media screen and (min-width: 820px) {
+    .map-and-contact {
+      flex-direction: row; } }
+  .map-and-contact .map {
+    max-width: 100%;
+    overflow: hidden; }
+    @media screen and (min-width: 320px) {
+      .map-and-contact .map {
+        width: 300px;
+        height: 300px;
+        margin: 1% auto 1% 15%; } }
+    @media screen and (min-width: 550px) {
+      .map-and-contact .map {
+        margin-top: 10%;
+        width: 275px;
+        height: 275px; } }
+    @media screen and (min-width: 670px) {
+      .map-and-contact .map {
+        height: 350px;
+        width: 350px;
+        margin-top: 5%; } }
+    @media screen and (min-width: 820px) {
+      .map-and-contact .map {
+        height: 500px;
+        width: 500px;
+        margin-top: 0; } }
+  .map-and-contact #my-map-display {
+    height: 100%;
+    width: 100%;
+    max-width: 100%; }
+  .map-and-contact iframe {
+    height: 100%;
+    width: 100%;
+    border: 0; }
+    @media screen and (min-width: 320px) {
+      .map-and-contact iframe {
+        height: 80%;
+        width: 80%; } }
+  .map-and-contact #my-map-display .text-marker {
+    max-width: none !important;
+    background: none !important; }
+  .map-and-contact .iframe img {
+    max-width: none; }
+  .map-and-contact .contact_form .row {
+    padding: 2%; }
+  .map-and-contact .contact_form #submit_button {
+    background: red;
+    color: white;
+    border: none; }
+  @media screen and (min-width: 320px) {
+    .map-and-contact .contact_form {
+      margin: 1% auto; } }
+  @media screen and (min-width: 550px) {
+    .map-and-contact .contact_form {
+      margin-top: 0;
+      flex-direction: row;
+      justify-content: center; }
+      .map-and-contact .contact_form textarea {
+        width: 250px;
+        height: 250px; } }
+  @media screen and (min-width: 550px) and (min-width: 670px) {
+    .map-and-contact .contact_form {
+      flex-direction: row;
+      justify-content: space-around; }
+      .map-and-contact .contact_form textarea {
+        width: 300px;
+        height: 300px; } }
+  @media screen and (min-width: 550px) and (min-width: 820px) {
+    .map-and-contact .contact_form {
+      flex-direction: row;
+      justify-content: space-around; } }
+
+.headstuff {
+  width: 100%;
+  display: flex; }
+  @media screen and (min-width: 320px) {
+    .headstuff {
+      height: 20%;
+      border-bottom: 2px solid red; } }
+  @media screen and (min-width: 550px) {
+    .headstuff {
+      height: 70px;
+      border-bottom: 3px double red; } }
+  @media screen and (min-width: 670px) {
+    .headstuff {
+      height: 70px;
+      border-bottom: 3px double red; } }
+  @media screen and (min-width: 820px) {
+    .headstuff {
+      height: 90px;
+      border-bottom: 3px double red; } }
+  @media screen and (min-width: 1220px) {
+    .headstuff {
+      height: 100px;
+      border-bottom: 3px double red; } }
+  .headstuff .hero {
+    display: flex; }
+    @media screen and (min-width: 320px) {
+      .headstuff .hero {
+        width: 80%;
+        margin: 1% auto; } }
+    @media screen and (min-width: 550px) {
+      .headstuff .hero {
+        width: 30%; } }
+    @media screen and (min-width: 670px) {
+      .headstuff .hero {
+        width: 20%; } }
+    @media screen and (min-width: 820px) {
+      .headstuff .hero {
+        width: 20%; } }
+    @media screen and (min-width: 1220px) {
+      .headstuff .hero {
+        width: 20%; } }
+
+@media screen and (min-width: 320px) {
+  .contact {
+    border: 2px solid red;
+    width: 65%;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1% auto; }
+    .contact .address {
+      padding: 2%; }
+    .contact .number {
+      padding: 0 2% 2%; } }
+@media screen and (min-width: 550px) {
+  .contact {
+    border-top: 3px double red;
+    border-bottom: 3px double red;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .contact .address {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 5%; }
+    .contact .number {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 5%; } }
+
+@media screen and (min-width: 320px) {
+  .beerlist {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%; }
+    .beerlist h1 {
+      margin-left: 20%;
+      font-family: "Cinzel", serif;
+      color: red;
+      font-size: 1.5rem; }
+    .beerlist li {
+      line-height: 1.25;
+      margin-left: 5%; } }
+  @media screen and (min-width: 320px) and (min-width: 550px) {
+    .beerlist {
+      width: 100%;
+      margin-left: 15%;
+      margin-top: 0;
+      margin-bottom: 5%; }
+      .beerlist h1 {
+        margin-left: 20%;
+        font-family: "Cinzel", serif;
+        color: red;
+        font-size: 2rem;
+        padding: 2%; }
+      .beerlist li {
+        font-size: 1rem;
+        line-height: 1.50;
+        margin-left: 5%; } }
+
+i {
+  color: red; }
+
+/*# sourceMappingURL=main.css.map */

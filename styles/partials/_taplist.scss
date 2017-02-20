@@ -1,0 +1,40 @@
+.beerlist {
+    @include bp(mobile) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10%;
+
+        h1 {
+            margin-left: 20%;
+            font-family: $headerFont;
+            color: red;
+            font-size: 1.5rem;
+        }
+
+        li {
+            line-height: 1.25;
+            margin-left: 5%;
+        }
+        @include bp(small) {
+            width: 100%;
+            margin-left: 15%;
+            margin-top: 0;
+            margin-bottom: 5%;
+
+            h1 {
+                margin-left: 20%;
+                font-family: $headerFont;
+                color: red;
+                font-size: 2rem;
+                padding: 2%;
+            }
+
+            li {
+                font-size: 1rem;
+                line-height: 1.50;
+                margin-left: 5%;
+            }
+        }
+    }
+}
