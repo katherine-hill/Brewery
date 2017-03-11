@@ -1,40 +1,59 @@
-.beerlist {
+.beer-list {
     @include bp(mobile) {
         display: flex;
-        justify-content: center;
+        width: 90%;
         flex-direction: column;
-        margin-top: 10%;
+        margin: 275px auto 1%;
+        background: rgba(white, .7);
 
         h1 {
-            margin-left: 20%;
+            margin-top: 35px;
+            margin-left: 10%;
             font-family: $headerFont;
-            color: red;
-            font-size: 1.5rem;
+            color: #a00909;
+            font-size: 3rem;
+        }
+
+        ul {
+            margin-bottom: 35px;
         }
 
         li {
-            line-height: 1.25;
-            margin-left: 5%;
+            width: 80%;
+            padding-top: 2%;
+            padding-bottom: 1%;
+            line-height: 1.5;
+            margin-left: 10%;
+
+            h2 {
+                font-size: 1.3rem;
+                border-top: $mobileBorder;
+            }
         }
         @include bp(small) {
-            width: 100%;
-            margin-left: 15%;
-            margin-top: 0;
+            width: 90%;
+            margin-right: 5%;
+            margin-top: 220px;
             margin-bottom: 5%;
 
             h1 {
-                margin-left: 20%;
+                margin-left: 15%;
                 font-family: $headerFont;
-                color: red;
+                color: #a00909;
                 font-size: 2rem;
-                padding: 2%;
             }
 
             li {
                 font-size: 1rem;
-                line-height: 1.50;
+                line-height: 1.2;
                 margin-left: 5%;
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
             }
+        }
+        @include bp(medium) {
+            margin-top: 270px;
         }
     }
 }

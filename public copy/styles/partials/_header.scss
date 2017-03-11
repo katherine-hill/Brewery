@@ -1,0 +1,49 @@
+header {
+    background: white;
+    height: 63px;
+    border-bottom: 1px solid $fontLightGray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .header-logo {
+        font-family: $headerFont;
+        margin-left: 8%;
+
+        .insta-logo {
+            i {
+                color: $fontDarkGray;
+                border-right: 1px solid #4c4c4c;
+                padding-right: 8%;
+                font-size: 1.5rem;
+            }
+
+            span {
+                color: $fontDarkGray;
+                font-size: 1.2rem;
+                padding-left: 8%;
+            }
+        }
+    }
+
+    #header-search {
+        .header-input-field {
+            background: $bgGray;
+            width: 150px;
+            height: 23px;
+            margin-right: 10%;
+            border-radius: 2%;
+            border: 1px solid $fontLightGray;
+        }
+    }
+
+    .header-nav-icons {
+        font-size: 1.2rem;
+        color: $fontDarkGray;
+
+        i {
+            width: 25%;
+            padding: 15%;
+        }
+    }
+}

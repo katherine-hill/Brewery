@@ -1,0 +1,30 @@
+.insta-main-container {
+    margin-left: 3%;
+    margin-top: 3%;
+    height: 800px;
+    width: 500px;
+    background: red;
+
+    .insta-header-container {
+        border: 1px solid $fontLightGray;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        background: white;
+        height: 9vh;
+
+        .insta-user-image {
+            padding: 1%;
+        }
+
+        .insta-timestamp {
+            margin-left: 68%;
+        }
+    }
+
+    .insta-post-image {
+        height: 500px;
+        width: 500px;
+        background: yellow;
+    }
+}

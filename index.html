@@ -6,26 +6,31 @@
     <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href='styles/font-awesome-4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles/app.css"> -->
+
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 
 
 <body>
-
-    <div class="headstuff">
-
-        <header>
-            <img class="hero" src="images/upsidedownbrewery.png" alt="Logo of Upside Down Brewery">
-        </header>
-
-
-    </div>
     <main>
-        <nav class="bottomnav">
+
+        <div class="headstuff">
+
+            <header>
+                <img class="logo" src="styles/images/upsidedownlogo.png" alt="Logo of Upside Down Brewery">
+            </header>
+
+            <nav class="bottomnav">
+                <ul class="navbar">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Our Beers</a></li>
+                    <li><a href="">Beer Club</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="smallnav">
 
             <div class="socialmediasmall">
                 <span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
@@ -42,20 +47,41 @@
             </ul>
         </nav>
 
-
-        <div class="contact"> <span class="address"><i class="fa fa-map-marker" aria-hidden="true"></i>
-      666 Upside Down Ln, Mirkwood, NC</span>
-            <span class="number"><i class="fa fa-phone-square" aria-hidden="true"></i>
-    (919)666-6666</span>
-        </div>
-        <img class="brewery-image" src="images/slide6.jpg" alt="The interior of the Upside Down Brewery.">
-        <ul class="beerlist">
+        <div class="beer-list">
             <h1>What's on tap?</h1>
-            <li><i class="fa fa-beer" aria-hidden="true"></i><span>Demigorgon's Delight Tripel(9.8% ABV)</span></li>
-            <li><i class="fa fa-beer" aria-hidden="true"></i><span>RIP Barb Sour Ale(4.6% ABV)</span></li>
-            <li><i class="fa fa-beer" aria-hidden="true"></i><span>Rolled Twenty Porter(5.8% ABV)</span></li>
-            <li><i class="fa fa-beer" aria-hidden="true"></i><span>Christmas Lights Amber Ale(5.7% ABV)</span></li>
-        </ul>
+            <ul>
+                <li>
+                    <h2>Demigorgon's Delight Tripel(9.8% ABV)</h2><i class="fa fa-beer" aria-hidden="true"></i>
+                    <span>This strong golden ale carries herbal notes and passion fruit in the aroma. Suggestions of honey and biscuit are found in the beer’s complex, varied palate. Tripel lingers on the palate for a complex, dry finish.</span></li>
+                <li>
+                    <h2>RIP Barb Oatmeal Stout(6.6% ABV)</h2><i class="fa fa-beer" aria-hidden="true"></i>
+                    <span>This oatmeal stout has an explosion of flavor created by dark roasted grains, and a 2 row barley.   A full bodied oatmeal stout that has tastes of chocolate and a smoothness from the oatmeal.</span></li>
+                <li>
+                    <h2>Rolled Twenty American Wheat(4.3% ABV)</h2><i class="fa fa-beer" aria-hidden="true"></i>
+                    <span>An American wheat beer brewed with half barley and half white wheat.  We also spice this beer with sweet orange peel.  A good drinking beer to quench your thirst during the boiling summer months.</span></li>
+                <li>
+                    <h2>Christmas Lights Winter Seasonal(7.5% ABV)</h2><i class="fa fa-beer" aria-hidden="true"></i>
+                    <span>Our interpretation of a winter seasonal beer.  This beer will curl your toes and put goosebumps on your arms.  A fine collection of traditional winter spices make this a great addition to the holiday season…it will make all humbugs cheery.</span></li>
+            </ul>
+        </div>
+
+        <div class="beer-history">
+            <h1>From Then to Now</h1>
+            <h2>A brief history of the upside down</h2>
+
+            <p> A delectably complex malt profile reminiscent of bread, toast, and biscuits, with hints of caramel, chocolate, and fruity esters. Perfectly balanced bitterness from the earthy, floral hops. Take one sip and another is sure to immediately follow…
+                and another… and another…</p>
+            <img src="styles/images/brewing_woodcut.jpg" />
+
+            <p>Brewed with hand-smoked malt from red and white oak from a forest in Orange County, VA, on land once owned by James Madison. Hazy, slightly muddy brown with orange and copper hues around the edges. Beige head with some initial foam, but it
+                quickly settles to a thin wisp. Most appealing brew of the pack. Sulfites are very hard to detect. Very light body, very white-wine-ish. </p>
+            <p>Sulfites are very hard to detect. Very light body, very white-wine-ish. Sweet and sour apple flavor in the middle. Kiss of warmth from the alcohol. Wet and refreshing; almost too drinkable. At 6 percent alcohol by volume, any more than a few
+                glasses will make you loopy.</p>
+            <p>We sampled a few 12-ounce bottles of this cider, chilled down to 40 degrees. Light, fizzy bubbles rise to the top while pouring. Very pale yellow color. Low carbonation. At first glance, you might almost think this is a white wine. Smells
+                of a blend of Pink Lady, Granny Smith and McIntosh apples; a bit buttery and musty in the back. </p>
+
+        </div>
+
         <div class="map-and-contact">
             <form class="contact_form">
                 <h1>Contact Us</h1>
@@ -69,16 +95,44 @@
                 </div>
                 <input id="submit_button" type="submit" value="Submit" />
             </form>
-            <div class="map">
-                <div id="my-map-display" style="height:100%; width:100%;max-width:100%;">
-                    <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Raleigh-Durham+International+Airport,+John+Brantley+Boulevard,+Morrisville,+NC,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU">
-</iframe>
-                </div>
+            <div>
+                <p></p>
             </div>
 
         </div>
+
     </main>
-    <footer><span>&copy Upside Down Brewing 1539<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script></span></footer>
+    <div class="footer-container">
+        <div class="bottomsocialmedia">
+            <span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
+            <span></span>
+            <span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
+            <span></span>
+            <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+        </div>
+        <div class="contact-hours-container">
+            <div class="hours">
+
+                <span>Mon-Fri 1pm-12am</span>
+                <span>Sat 12pm-2am</span>
+                <span>Sun closed</span>
+
+            </div>
+            <div class="contact">
+                <p class="address">
+                    666 Upside Down Ln, Mirkwood, NC</p>
+                <p class="number">
+                    (919)867-5309</p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy The Upside Down Brewery 1539
+                <script>
+                    new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());
+                </script>
+            </p>
+        </footer>
+    </div>
 
 </body>
 

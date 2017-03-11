@@ -1,0 +1,15 @@
+@import url( 'https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Raleway');
+$headerFont: 'IM Fell DW Pica SC', serif;
+$primaryFont: 'Raleway', sans-serif;
+
+ul {
+    font-family: $headerFont;
+}
+
+p {
+    font-family: $primaryFont;
+}
+
+span {
+    font-family: $primaryFont;
+}

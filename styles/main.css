@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Raleway");
 *,
 *:after,
 *:before {
@@ -127,285 +128,393 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.bottomnav {
-  display: flex; }
-  @media screen and (min-width: 320px) {
-    .bottomnav {
-      height: 150px;
-      justify-content: center;
-      flex-direction: column; } }
-  @media screen and (min-width: 550px) {
-    .bottomnav {
-      width: 100%;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 60px; } }
-  @media screen and (min-width: 670px) {
-    .bottomnav {
-      width: 100%;
-      justify-content: space-around;
-      margin-left: 10%; } }
-  @media screen and (min-width: 820px) {
-    .bottomnav {
-      width: 100%;
-      height: 40px;
+ul {
+  font-family: "IM Fell DW Pica SC", serif; }
+
+p {
+  font-family: "Raleway", sans-serif; }
+
+span {
+  font-family: "Raleway", sans-serif; }
+
+@media screen and (min-width: 320px) {
+  .beer-list {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 275px auto 1%;
+    background: rgba(255, 255, 255, 0.7); }
+    .beer-list h1 {
+      margin-top: 35px;
+      margin-left: 10%;
+      font-family: "IM Fell DW Pica SC", serif;
+      color: #a00909;
+      font-size: 3rem; }
+    .beer-list ul {
+      margin-bottom: 35px; }
+    .beer-list li {
+      width: 80%;
+      padding-top: 2%;
+      padding-bottom: 1%;
+      line-height: 1.5;
+      margin-left: 10%; }
+      .beer-list li h2 {
+        font-size: 1.3rem;
+        border-top: 2px solid #a00909; } }
+  @media screen and (min-width: 320px) and (min-width: 550px) {
+    .beer-list {
+      width: 90%;
+      margin-right: 5%;
+      margin-top: 220px;
+      margin-bottom: 5%; }
+      .beer-list h1 {
+        margin-left: 15%;
+        font-family: "IM Fell DW Pica SC", serif;
+        color: #a00909;
+        font-size: 2rem; }
+      .beer-list li {
+        font-size: 1rem;
+        line-height: 1.2;
+        margin-left: 5%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%; } }
+  @media screen and (min-width: 320px) and (min-width: 670px) {
+    .beer-list {
+      margin-top: 270px; } }
+
+@media screen and (min-width: 320px) {
+  .beer-history {
+    display: none; } }
+@media screen and (min-width: 550px) {
+  .beer-history {
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: 10%;
+    display: inline-block;
+    line-height: 1.25;
+    width: 90%;
+    margin-left: 5%; }
+    .beer-history h1 {
+      margin-top: 35px;
       margin-left: 20%;
-      align-items: center;
-      justify-content: space-between;
-      align-items: center; } }
+      font-family: "IM Fell DW Pica SC", serif;
+      color: #a00909;
+      font-size: 2rem; }
+    .beer-history h2 {
+      margin-left: 10%;
+      font-family: "IM Fell DW Pica SC", serif;
+      width: 80%;
+      font-size: 1.3rem; }
+    .beer-history img {
+      width: 15rem;
+      margin-left: 10%;
+      float: left;
+      padding-right: 2%; }
+    .beer-history p {
+      font-size: 1rem;
+      line-height: 1.2;
+      clear: right;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+      padding-bottom: 1%; }
+      .beer-history p:last-child {
+        margin-bottom: 35px; } }
+@media screen and (min-width: 670px) {
+  .beer-history h1 {
+    margin-left: 15%;
+    font-family: "IM Fell DW Pica SC", serif;
+    color: #a00909; }
+  .beer-history h2 {
+    margin-left: 15%;
+    font-family: "IM Fell DW Pica SC", serif; } }
+
+.footer-container {
+  border-top: 5px double #a00909;
+  background: white;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+  bottom: 0;
+  width: 100%; }
+
+.bottomsocialmedia {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-top: 10px; }
+  .bottomsocialmedia span {
+    padding: 3px; }
+
+.contact-hours-container {
+  padding-top: 7px;
+  justify-content: center;
+  display: flex;
+  margin-left: 5%;
+  height: 40px; }
   @media screen and (min-width: 320px) {
-    .bottomnav .navbar {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      margin: 1% auto; } }
-  @media screen and (min-width: 550px) {
-    .bottomnav .navbar {
-      display: flex;
-      flex-direction: row;
-      width: 50%; } }
-  @media screen and (min-width: 670px) {
-    .bottomnav .navbar {
-      width: 40%; } }
-  @media screen and (min-width: 320px) {
+    .contact-hours-container {
+      padding-top: 5px;
+      font-size: 0.8rem;
+      line-height: 0.9; } }
+  .contact-hours-container .hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 2px solid #a00909;
+    padding-right: 10px; }
+  .contact-hours-container .contact {
+    padding-left: 10px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+@media screen and (min-width: 320px) {
+  .smallnav {
+    width: 100%;
+    padding-top: 220px;
+    height: 150px;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 25%;
+    text-align: center; } }
+@media screen and (min-width: 550px) {
+  .smallnav {
+    display: none; } }
+.smallnav .navbar {
+  padding: 1%;
+  background: rgba(255, 255, 255, 0.6);
+  width: 50%;
+  height: 175px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; }
+  .smallnav .navbar li {
+    margin: 1%; }
+    .smallnav .navbar li a {
+      color: #a00909;
+      text-decoration: none;
+      font-size: 2rem; }
+      .smallnav .navbar li a:active {
+        font-size: 1.5rem; }
+@media screen and (min-width: 320px) {
+  .smallnav .socialmediasmall {
+    background: rgba(255, 255, 255, 0.6);
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 3%; }
+    .smallnav .socialmediasmall span {
+      padding: 2%; }
+      .smallnav .socialmediasmall span:active {
+        font-size: 2.5rem; } }
+
+@media screen and (min-width: 320px) {
+  .bottomnav {
+    display: none; } }
+@media screen and (min-width: 550px) {
+  .bottomnav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 4%; }
+    .bottomnav ul {
+      margin-top: 25px; }
+      .bottomnav ul li {
+        padding-top: 2%; } }
+@media screen and (min-width: 670px) {
+  .bottomnav {
+    justify-content: center;
+    width: 430px;
+    margin-top: 110px; } }
+@media screen and (min-width: 820px) {
+  .bottomnav {
+    margin-bottom: 12px; } }
+@media screen and (min-width: 1220px) {
+  .bottomnav {
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 700px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.5); } }
+.bottomnav .navbar li {
+  text-align: center; }
+.bottomnav .navbar a {
+  color: #a00909;
+  text-decoration: none; }
+@media screen and (min-width: 550px) {
+  .bottomnav .navbar {
+    font-size: 1.5rem;
+    padding: 0; }
+    .bottomnav .navbar a {
+      color: #a00909;
+      text-decoration: none; }
+      .bottomnav .navbar a:hover {
+        font-size: 1.75rem; }
+      .bottomnav .navbar a:active {
+        font-size: 1.25rem; } }
+@media screen and (min-width: 670px) {
+  .bottomnav .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 375px;
+    font-size: 1.4rem; }
+    .bottomnav .navbar a:hover {
+      font-size: 1.6rem; }
+    .bottomnav .navbar a:active {
+      font-size: 1.2rem; } }
+@media screen and (min-width: 820px) {
+  .bottomnav .navbar {
+    width: 450px;
+    font-size: 1.5rem; }
+    .bottomnav .navbar a:hover {
+      font-size: 2rem; }
+    .bottomnav .navbar a:active {
+      font-size: 1.2rem; } }
+@media screen and (min-width: 1220px) {
+  .bottomnav .navbar {
+    align-items: center;
+    width: 850px;
+    font-size: 1.6rem; }
     .bottomnav .navbar li {
-      text-align: center;
-      border: 2px solid red;
-      border-bottom: none; }
-      .bottomnav .navbar li:last-child {
-        border-bottom: 2px solid red; }
-      .bottomnav .navbar li a {
-        font-size: 1rem;
-        width: 20%;
-        color: red;
-        text-decoration: none;
-        padding: 4px; } }
-  @media screen and (min-width: 550px) {
-    .bottomnav .navbar li {
-      border: none; }
-      .bottomnav .navbar li:last-child {
-        border-bottom: none; }
-      .bottomnav .navbar li a {
-        font-size: 1rem;
-        width: 20%;
-        color: red;
-        text-decoration: none;
-        padding: 4px; } }
-  @media screen and (min-width: 320px) {
-    .bottomnav .socialmediasmall {
-      display: flex;
-      justify-content: center;
-      color: red;
-      font-size: 2.5rem; }
-      .bottomnav .socialmediasmall span {
-        padding-right: 1%; } }
-  @media screen and (min-width: 550px) {
-    .bottomnav .socialmediasmall {
-      color: red;
-      font-size: 1.5rem; }
-      .bottomnav .socialmediasmall span {
-        padding-right: 5%; } }
+      padding-left: 1%; } }
+@media screen and (min-width: 550px) {
+  .bottomnav .socialmediasmall {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between; } }
+@media screen and (min-width: 670px) {
+  .bottomnav .socialmediasmall {
+    width: 400px;
+    justify-content: center;
+    padding-top: 0.5%; }
+    .bottomnav .socialmediasmall span {
+      padding-left: 3%; } }
+@media screen and (min-width: 1220px) {
+  .bottomnav .socialmediasmall {
+    align-items: center;
+    font-size: 2em;
+    width: 250px;
+    border-top: none; } }
 
 .brewery-image {
   width: 100%; }
 
 .map-and-contact {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  margin: 5% auto; }
   .map-and-contact h1 {
-    font-family: "Cinzel", serif;
-    color: red;
-    font-size: 1.25rem; }
+    margin-top: 25px;
+    font-family: "IM Fell DW Pica SC", serif;
+    color: #a00909;
+    font-size: 2rem; }
   @media screen and (min-width: 320px) {
     .map-and-contact {
+      font-size: 2rem;
       flex-direction: column;
       justify-content: center; } }
-  @media screen and (min-width: 550px) {
-    .map-and-contact {
-      flex-direction: row;
-      margin: 1% auto; } }
-  @media screen and (min-width: 670px) {
-    .map-and-contact {
-      flex-direction: row; } }
-  @media screen and (min-width: 820px) {
-    .map-and-contact {
-      flex-direction: row; } }
-  .map-and-contact .map {
-    max-width: 100%;
-    overflow: hidden; }
+  .map-and-contact .contact_form {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1%; }
+    .map-and-contact .contact_form .row {
+      padding: 1%; }
+    .map-and-contact .contact_form #submit_button {
+      background: #a00909;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      margin-bottom: 25px; }
     @media screen and (min-width: 320px) {
-      .map-and-contact .map {
-        width: 300px;
-        height: 300px;
-        margin: 1% auto 1% 15%; } }
+      .map-and-contact .contact_form {
+        margin-top: 2%;
+        margin-left: 5%;
+        width: 90%; }
+        .map-and-contact .contact_form textarea {
+          width: 250px;
+          height: 200px; } }
     @media screen and (min-width: 550px) {
-      .map-and-contact .map {
-        margin-top: 10%;
-        width: 275px;
-        height: 275px; } }
+      .map-and-contact .contact_form {
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: center;
+        width: 400px;
+        margin: 1% auto; }
+        .map-and-contact .contact_form textarea {
+          width: 350px;
+          height: 300px; } }
     @media screen and (min-width: 670px) {
-      .map-and-contact .map {
-        height: 350px;
-        width: 350px;
-        margin-top: 5%; } }
+      .map-and-contact .contact_form {
+        flex-direction: row;
+        justify-content: space-around; } }
     @media screen and (min-width: 820px) {
-      .map-and-contact .map {
-        height: 500px;
-        width: 500px;
-        margin-top: 0; } }
-  .map-and-contact #my-map-display {
-    height: 100%;
-    width: 100%;
-    max-width: 100%; }
-  .map-and-contact iframe {
-    height: 100%;
-    width: 100%;
-    border: 0; }
-    @media screen and (min-width: 320px) {
-      .map-and-contact iframe {
-        height: 80%;
-        width: 80%; } }
-  .map-and-contact #my-map-display .text-marker {
-    max-width: none !important;
-    background: none !important; }
-  .map-and-contact .iframe img {
-    max-width: none; }
-  .map-and-contact .contact_form .row {
-    padding: 2%; }
-  .map-and-contact .contact_form #submit_button {
-    background: red;
-    color: white;
-    border: none; }
-  @media screen and (min-width: 320px) {
-    .map-and-contact .contact_form {
-      margin: 1% auto; } }
-  @media screen and (min-width: 550px) {
-    .map-and-contact .contact_form {
-      margin-top: 0;
-      flex-direction: row;
-      justify-content: center; }
-      .map-and-contact .contact_form textarea {
-        width: 250px;
-        height: 250px; } }
-  @media screen and (min-width: 550px) and (min-width: 670px) {
-    .map-and-contact .contact_form {
-      flex-direction: row;
-      justify-content: space-around; }
-      .map-and-contact .contact_form textarea {
-        width: 300px;
-        height: 300px; } }
-  @media screen and (min-width: 550px) and (min-width: 820px) {
-    .map-and-contact .contact_form {
-      flex-direction: row;
-      justify-content: space-around; } }
+      .map-and-contact .contact_form {
+        flex-direction: column; } }
+
+body {
+  background: url("images/slide6.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; }
 
 .headstuff {
   width: 100%;
-  display: flex; }
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  top: 0;
+  border-bottom: 5px double #a00909; }
   @media screen and (min-width: 320px) {
     .headstuff {
-      height: 20%;
-      border-bottom: 2px solid red; } }
+      padding: 5%;
+      height: 200px;
+      flex-direction: column;
+      position: fixed; } }
   @media screen and (min-width: 550px) {
     .headstuff {
-      height: 70px;
-      border-bottom: 3px double red; } }
-  @media screen and (min-width: 670px) {
-    .headstuff {
-      height: 70px;
-      border-bottom: 3px double red; } }
-  @media screen and (min-width: 820px) {
-    .headstuff {
-      height: 90px;
-      border-bottom: 3px double red; } }
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; } }
   @media screen and (min-width: 1220px) {
     .headstuff {
-      height: 100px;
-      border-bottom: 3px double red; } }
-  .headstuff .hero {
-    display: flex; }
+      height: 230px; } }
+  .headstuff .logo {
+    justify-content: center; }
     @media screen and (min-width: 320px) {
-      .headstuff .hero {
-        width: 80%;
-        margin: 1% auto; } }
+      .headstuff .logo {
+        width: 250px;
+        height: auto;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-bottom: 3%; } }
     @media screen and (min-width: 550px) {
-      .headstuff .hero {
-        width: 30%; } }
-    @media screen and (min-width: 670px) {
-      .headstuff .hero {
-        width: 20%; } }
+      .headstuff .logo {
+        margin-top: 10%;
+        margin-left: 0; } }
     @media screen and (min-width: 820px) {
-      .headstuff .hero {
-        width: 20%; } }
+      .headstuff .logo {
+        margin-top: 5%;
+        width: 270px; } }
     @media screen and (min-width: 1220px) {
-      .headstuff .hero {
-        width: 20%; } }
-
-@media screen and (min-width: 320px) {
-  .contact {
-    border: 2px solid red;
-    width: 65%;
-    line-height: 1.25;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 1% auto; }
-    .contact .address {
-      padding: 2%; }
-    .contact .number {
-      padding: 0 2% 2%; } }
-@media screen and (min-width: 550px) {
-  .contact {
-    border-top: 3px double red;
-    border-bottom: 3px double red;
-    border-right: none;
-    border-left: none;
-    width: 100%;
-    line-height: 1.25;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    .contact .address {
-      padding-top: 0;
-      padding-bottom: 0;
-      padding-left: 5%; }
-    .contact .number {
-      padding-top: 0;
-      padding-bottom: 0;
-      padding-right: 5%; } }
-
-@media screen and (min-width: 320px) {
-  .beerlist {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 10%; }
-    .beerlist h1 {
-      margin-left: 20%;
-      font-family: "Cinzel", serif;
-      color: red;
-      font-size: 1.5rem; }
-    .beerlist li {
-      line-height: 1.25;
-      margin-left: 5%; } }
-  @media screen and (min-width: 320px) and (min-width: 550px) {
-    .beerlist {
-      width: 100%;
-      margin-left: 15%;
-      margin-top: 0;
-      margin-bottom: 5%; }
-      .beerlist h1 {
-        margin-left: 20%;
-        font-family: "Cinzel", serif;
-        color: red;
-        font-size: 2rem;
-        padding: 2%; }
-      .beerlist li {
-        font-size: 1rem;
-        line-height: 1.50;
-        margin-left: 5%; } }
+      .headstuff .logo {
+        width: 300px;
+        margin-left: 30%;
+        margin-top: 0;
+        margin-bottom: 0; } }
 
 i {
-  color: red; }
+  color: #a00909; }
 
 /*# sourceMappingURL=main.css.map */

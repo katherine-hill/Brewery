@@ -1,0 +1,63 @@
+.beer-history {
+    @include bp(mobile) {
+        display: none;
+    }
+    @include bp(small) {
+        background: rgba(white, .7);
+
+        h1 {
+            margin-top: 35px;
+            margin-left: 20%;
+            font-family: $headerFont;
+            color: #a00909;
+            font-size: 2rem;
+        }
+
+        h2 {
+            margin-left: 10%;
+            font-family: $headerFont;
+            width: 80%;
+            font-size: 1.3rem;
+        }
+        margin-left: 10%;
+        display: inline-block;
+        line-height: 1.25;
+
+        img {
+            width: 15rem;
+            margin-left: 10%;
+            float: left;
+            padding-right: 2%;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.2;
+            clear: right;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+            padding-bottom: 1%;
+
+            &:last-child {
+                margin-bottom: 35px;
+            }
+        }
+        width: 90%;
+        margin-left: 5%;
+    }
+    @include bp(medium) {
+        h1 {
+            margin-left: 15%;
+            font-family: $headerFont;
+            color: #a00909;
+        }
+
+        h2 {
+            margin-left: 15%;
+            font-family: $headerFont;
+        }
+    }
+    @include bp(large) {}
+    @include bp(full) {}
+}

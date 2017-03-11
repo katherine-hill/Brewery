@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Lobster|Oswald");
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  font: 16px/1.25 "Abel", sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+::-moz-selection {
+  color: #fff;
+  background: #2c3e50; }
+
+::selection {
+  color: #fff;
+  background: #2c3e50; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+body {
+  background: #FAFAFA;
+  font-size: 16px;
+  line-height: 1.6; }
+
+.template-container {
+  margin: 15px 20px; }
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%; }
+
+.insta-user-image {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px; }
+
+header {
+  background: white;
+  height: 63px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  header .header-logo {
+    font-family: "Lobster", cursive;
+    margin-left: 8%; }
+    header .header-logo .insta-logo i {
+      color: #262626;
+      border-right: 1px solid #4c4c4c;
+      padding-right: 8%;
+      font-size: 1.5rem; }
+    header .header-logo .insta-logo span {
+      color: #262626;
+      font-size: 1.2rem;
+      padding-left: 8%; }
+  header #header-search .header-input-field {
+    background: #FAFAFA;
+    width: 150px;
+    height: 23px;
+    margin-right: 10%;
+    border-radius: 2%;
+    border: 1px solid #ddd; }
+  header .header-nav-icons {
+    font-size: 1.2rem;
+    color: #262626; }
+    header .header-nav-icons i {
+      width: 25%;
+      padding: 15%; }
+
+.insta-main-container {
+  margin-left: 3%;
+  margin-top: 3%;
+  height: 800px;
+  width: 500px;
+  background: red; }
+  .insta-main-container .insta-header-container {
+    border: 1px solid #ddd;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 9vh; }
+    .insta-main-container .insta-header-container .insta-user-image {
+      padding: 1%; }
+    .insta-main-container .insta-header-container .insta-timestamp {
+      margin-left: 68%; }
+  .insta-main-container .insta-post-image {
+    height: 500px;
+    width: 500px;
+    background: yellow; }
+
+/*# sourceMappingURL=app.css.map */

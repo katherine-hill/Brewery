@@ -1,12 +1,14 @@
-@import "partials/reset";
 @import "partials/variables";
 @import "partials/mixins";
+@import "partials/reset";
+@import "partials/common";
+@import "partials/taplist";
+@import "partials/beerhist";
+@import "partials/contact";
 @import "partials/socialmedia";
 @import "partials/map";
 @import "partials/header";
-@import "partials/contact";
-@import "partials/taplist";
 
 i {
-    color: red;
+    color: #a00909;
 }
